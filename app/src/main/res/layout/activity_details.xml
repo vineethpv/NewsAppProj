@@ -4,28 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.activities.HomeScreenActivity">
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvNewsFeed"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:listitem="@layout/item_row_feed" />
+    tools:context=".ui.activities.DetailsActivity">
 
     <TextView
-        android:id="@+id/txtErrorMsg"
+        android:id="@+id/txtDetails"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
-        android:visibility="gone"
         android:textColor="@android:color/black"
         android:textSize="20sp"
-        android:text="@string/error_msg"
+        tools:text="details"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
